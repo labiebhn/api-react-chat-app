@@ -33,7 +33,7 @@ io.on("connection", (socket) => {
 
 
 // CONNECT DATABASE MONGODB
-mongoose.connect('mongodb+srv://labiebhn:OWlUbRjZLjMlutjc@cluster0.8wb86.mongodb.net/chat-app?retryWrites=true&w=majority')
+mongoose.connect('')
 .then(() => {
   const port = process.env.PORT || 4001;
   server.listen(port, () => console.log(`Listening on port ${port}`));
